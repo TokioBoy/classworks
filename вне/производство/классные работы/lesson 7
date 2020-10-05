@@ -1,0 +1,11 @@
+public class Basic_1 {
+	public static void main(String args[]) {
+//представлення цілих змінних в різних системах числення
+		int x = 75;
+		int y = 0x4b;
+		int z = 0113;
+		int a = 0b1001011;           // двійкові змінні - починаючи із Java SE 7
+		System.out.println(x);      // виведення 75
+		System.out.println(y);      // виведення 75
+		System.out.println(z);      // виведення 75
+		System.out.println(a);      // виведення 75
