@@ -7,14 +7,14 @@ public class Main {
         {
     }
    System.out.println("Введите положительное число: ");
-    Scanner in = new Scanner(System.in);
-    int x = in.nextInt();
-    boolean z = true;
-    for (int P = 2;  P <= x; P++) {
-        for (int i = 2; i < P; i++) {
-            if (P % i == 0) {
-                z = false;
-                break;
+                Scanner in = new Scanner(System.in);
+                int x = in.nextInt();
+                boolean z = true;
+                for (int P = 2;  P <= x; P++) {
+                    for (int i = 2; i < P; i++) {
+                        if (P % i == 0) {
+                            z = false;
+                            break;
             }
         }
         if (z) System.out.println(P);
