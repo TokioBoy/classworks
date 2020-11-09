@@ -1,0 +1,50 @@
+package array1.lessonX.part1;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        int[] peoples = new int[15];
+
+        int p_min = (int)Double.POSITIVE_INFINITY,p_max = (int)Double.NEGATIVE_INFINITY; // число
+        int p_min_p = 0,p_max_p = 0; // index
+        int sum = 0;
+
+
+        for (int i = 0; i < peoples.length;) {
+            int i_i = (int)(Math.random()*32+154);
+
+            if(154 <= i_i && i_i <= 186){
+                peoples[i] = i_i;
+
+
+                if (p_max < i_i){
+                    p_max = i_i;
+                    p_max_p = i;
+                }
+
+                if(p_min > i_i){
+                    p_min_p = i;
+                    p_min = i_i;
+                }
+
+                sum = sum + i_i;
+
+                //System.out.println("--DBG-- i = " + i + " i_i = "+i_i);
+
+                i++;
+
+            }else{
+                System.out.println("Eto GG local i = " + i + " rand = "+ i_i);
+            }
+
+
+
+
+        }
+
+        System.out.println("Min = " + p_min + "(" + p_min_p + ")" + " Max = " + p_max + "(" + p_max_p + ")" + " AVG = " + sum/peoples.length);
+
+
+    }
+}
