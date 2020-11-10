@@ -1,0 +1,27 @@
+package array1.ControlX;
+public class Main2 {
+    public static void main(String[] args) {
+        int min=-70,max=90,avg = (Math.abs(min)+Math.abs(max))/2;
+        int[] arr1 = new int[20];
+        int arr2_l = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            int ii = (int)(Math.random() * (max - min) + min);
+            if(min <= ii && ii <= max){
+                arr1[i] = ii;
+                arr2_l++;
+                i++;
+            }
+        }
+        int[] arr2 = new int[arr2_l];
+        int aa = 0;
+        System.out.println();
+        for (int i = 0; i < arr1.length; i++) {
+            if(arr1[i]>avg){
+                arr2[aa] = arr1[i];
+                System.out.println(arr2[aa]);
+                aa++;
+                i++;
+            }
+        }
+    }
+}
