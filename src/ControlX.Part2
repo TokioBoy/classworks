@@ -1,31 +1,32 @@
 package array1.ControlX;
-public class Main2 {
-    public  static  void  main ( String [] args ) {
-        двойная сумма =  0 ;
-        int j =  0 ;
-        int [] m =  новый  int [ 15 ];
-        int minI =  0 ;
-        int maxI =  0 ;
-        int min = ( int ) Двойное . POSITIVE_INFINITY ;
-        int max = ( int ) Двойное . NEGATIVE_INFINITY ;
-        for ( int i =  0 , n = m . length; i < n; i ++ ) {
-            m [i] =  154 + ( int ) ( Math . random () *  32 );
-            Система . из . println (м [я]);
-        j ++ ; сумма + = m [i];}
-        for ( int i =  0 , n = m . length; i < n; i ++ ) {
-            if (min > m [i]) {
-                мин = м [я];
-                minI = i;
+package array1.ControlX;
+public class Main4 {
+    public static void main(String[] args) {
+        double sum = 0;
+        int j = 0;
+        int[] m = new int[15];
+        int minI = 0;
+        int maxI = 0;
+        int min = (int) Double.POSITIVE_INFINITY;
+        int max = (int) Double.NEGATIVE_INFINITY;
+        for (int i = 0, n = m.length; i < n; i++) {
+            m[i] = 154+(int) (Math.random() * 32);
+            System.out.println(m[i]);
+            j++; sum+= m[i];}
+        for (int i = 0, n = m.length; i < n; i++) {
+            if (min > m[i]) {
+                min = m[i];
+                minI=i;
 
 
             }
-            if (max < m [i]) {
-                макс = м [я];
+            if (max < m[i]) {
+                max = m[i];
                 maxI = i;
             }
         }
-        двойной г = сумма / j;
-        Система . из . println ( " Минимальный: " + min + " , Индекс: " + minI + " \ n Максимальный: " + max + " , Индекс: " + maxI);
-        Система . из . println ( " Середнє арифметичне: " + g);
+        double g = sum/j;
+        System.out.println("Minimal: "+ min+", Index: "+minI+"\nMaximal: "+max+", Index: "+maxI);
+        System.out.println("Середнє арифметичне: "+g);
     }
 }
