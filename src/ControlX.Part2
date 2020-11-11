@@ -1,27 +1,31 @@
 package array1.ControlX;
 public class Main2 {
-    public static void main(String[] args) {
-        int min=-70,max=90,avg = (Math.abs(min)+Math.abs(max))/2;
-        int[] arr1 = new int[20];
-        int arr2_l = 0;
-        for (int i = 0; i < arr1.length; i++) {
-            int ii = (int)(Math.random() * (max - min) + min);
-            if(min <= ii && ii <= max){
-                arr1[i] = ii;
-                arr2_l++;
-                i++;
+    public  static  void  main ( String [] args ) {
+        двойная сумма =  0 ;
+        int j =  0 ;
+        int [] m =  новый  int [ 15 ];
+        int minI =  0 ;
+        int maxI =  0 ;
+        int min = ( int ) Двойное . POSITIVE_INFINITY ;
+        int max = ( int ) Двойное . NEGATIVE_INFINITY ;
+        for ( int i =  0 , n = m . length; i < n; i ++ ) {
+            m [i] =  154 + ( int ) ( Math . random () *  32 );
+            Система . из . println (м [я]);
+        j ++ ; сумма + = m [i];}
+        for ( int i =  0 , n = m . length; i < n; i ++ ) {
+            if (min > m [i]) {
+                мин = м [я];
+                minI = i;
+
+
+            }
+            if (max < m [i]) {
+                макс = м [я];
+                maxI = i;
             }
         }
-        int[] arr2 = new int[arr2_l];
-        int aa = 0;
-        System.out.println();
-        for (int i = 0; i < arr1.length; i++) {
-            if(arr1[i]>avg){
-                arr2[aa] = arr1[i];
-                System.out.println(arr2[aa]);
-                aa++;
-                i++;
-            }
-        }
+        двойной г = сумма / j;
+        Система . из . println ( " Минимальный: " + min + " , Индекс: " + minI + " \ n Максимальный: " + max + " , Индекс: " + maxI);
+        Система . из . println ( " Середнє арифметичне: " + g);
     }
 }
