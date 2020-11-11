@@ -1,6 +1,5 @@
 package array1.ControlX;
-package array1.ControlX;
-public class Main4 {
+public class Main2 {
     public static void main(String[] args) {
         double sum = 0;
         int j = 0;
@@ -26,7 +25,7 @@ public class Main4 {
             }
         }
         double g = sum/j;
-        System.out.println("Minimal: "+ min+", Index: "+minI+"\nMaximal: "+max+", Index: "+maxI);
+        System.out.println("Минимум: "+ min+", Индекс: "+minI+"\nМаксимум: "+max+", Индекс: "+maxI);
         System.out.println("Середнє арифметичне: "+g);
     }
 }
