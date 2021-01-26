@@ -1,0 +1,9 @@
+package Polimorfizm.PRToString;
+
+public class Main {
+    public static void main(String[] args) {
+        Check user = new Check("Петя",7, 100);
+        System.out.println(user);
+    }
+
+}
