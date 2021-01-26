@@ -1,0 +1,17 @@
+package Polimorfizm.PRthissuper;
+
+public class Cat extends Animal{
+    int price;
+    String name;
+    Cat(int weight, String breed, int price, String name){
+        super(weight, breed);
+        this.name = name;
+        this.price = price;
+    }
+    void display(){
+        System.out.println("Вес в супер классе: " + super.getWeight());
+        System.out.println("Порода в супер классе: " + super.getBreed());
+        System.out.println("Имя в суб классе: " +  name);
+        System.out.println("Цена в суб классе: " +  price);
+    }
+}
