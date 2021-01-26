@@ -1,0 +1,8 @@
+package Polimorfizm.PREquals;
+public class Main {
+    public static void main(String[] args) {
+        User user = new User("Anton" , 10);
+        User user1 = new User("Anton", 10);
+        System.out.println(user.equals(user1));
+    }
+}
