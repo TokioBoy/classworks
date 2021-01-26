@@ -1,0 +1,19 @@
+package Polimorfizm.PRToString;
+public class Check {
+    private String name;
+    private int porzii;
+    private int price;
+
+    Check(String name, int porzii, int price)
+    {
+        this.name = name;
+        this.porzii = porzii;
+        this.price= price;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Имя: " + this.name+", Взял порций: " +this.porzii +", Должен: "+ this.price + "гривен";
+    }
+}
