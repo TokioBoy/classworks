@@ -1,0 +1,7 @@
+package Polimorfizm.PRthissuper;
+public class Main {
+    public static void main(String[] args) {
+        Cat myCat = new Cat(6, "Короткошерстный", 909, "Умка");
+        myCat.display();
+    }
+}
