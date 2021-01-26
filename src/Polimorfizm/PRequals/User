@@ -1,0 +1,18 @@
+package Polimorfizm.PREquals;
+public class User {
+    private String name;
+    private int age;
+    User(String name , int age){
+        this.name = name;
+        this.age=age;
+    }
+    @Override
+    public boolean equals(Object o) {
+        boolean result = this.name == ((User)o).name;
+        if (result == true) {
+result = this.age == ((User)o).age;
+        }
+        return result;
+    }
+}
+
